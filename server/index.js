@@ -17,5 +17,5 @@ app.get('/',(req,res)=>{
 })
 const port=process.env.PORT || 8000;
 app.listen( port , () =>{
-    console.log(`App is running on port : ${port}`);
+    console.log(`App is running in ${process.env.DEV_MODE} on port : ${port}`.bgCyan.white);
 })
